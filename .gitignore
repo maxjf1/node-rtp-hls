@@ -61,4 +61,6 @@ typings/
 .next
 
 ## PROJETO
+video/*.ts
 video/*.mp4
+video/*.m3u8
