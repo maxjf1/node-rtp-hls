@@ -1,0 +1,40 @@
+{
+  "name": "rtp-hls",
+  "version": "1.0.0",
+  "description": "Node RTP to HLS Server",
+  "main": "index.js",
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "babel-node --presets=env",
+    "start": "nodemon --exec npm run babel-node -- ./index.js",
+    "build": "babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxjf1/node-rtp-hls.git"
+  },
+  "keywords": [
+    "RTP",
+    "HLS",
+    "Streaming"
+  ],
+  "author": "Maxwell Souza <maxwellsouzacarvalho@gmail.com> (https://github.com/maxjf1)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxjf1/node-rtp-hls/issues"
+  },
+  "homepage": "https://github.com/maxjf1/node-rtp-hls#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.2"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
